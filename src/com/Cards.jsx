@@ -11,7 +11,7 @@ function Cards() {
   };
 
   const MetricCard = ({ icon: Icon, title, value }) => (
-    <div className="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-800">
+    <div className="bg-gray-900 p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-800">
       <div className="flex items-center space-x-4">
         <div className="bg-gray-800 p-3 rounded-lg">
           <Icon className="text-blue-400" size={24} />

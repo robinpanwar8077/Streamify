@@ -40,7 +40,7 @@ const MusicStreamingDashboard = () => {
                 </button>
               </div>
             </div>
-            <div className="bg-gray-900 rounded-xl border border-gray-800 p-6">
+            <div className=" p-6">
               <Chart />
             </div>
           </section>

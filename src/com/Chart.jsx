@@ -41,7 +41,7 @@ function Chart() {
     fontFamily: "Inter, sans-serif",
   };
   return (
-    <div className="p-6 bg-gray-950">
+    <div className="p-2 bg-gray-950">
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6">
         {/* User Growth Chart */}
         <div className="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800">
@@ -78,7 +78,7 @@ function Chart() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
           {/* Revenue Distribution */}
-          <div className="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800">
+          <div className="bg-gray-900 p-4 rounded-xl shadow-lg border border-gray-800">
             <h2 className="text-xl font-semibold mb-4 text-white">
               Revenue Distribution
             </h2>
@@ -90,7 +90,7 @@ function Chart() {
                   nameKey="name"
                   cx="50%"
                   cy="50%"
-                  outerRadius={100}
+                  outerRadius={80}
                   label
                   labelLine={false}
                 >
@@ -100,7 +100,7 @@ function Chart() {
                 </Pie>
                 <Tooltip
                   contentStyle={{
-                    backgroundColor: "#1a202c",
+                    backgroundColor: "#fff",
                     border: "1px solid #2d3748",
                     borderRadius: "0.5rem",
                     color: "#fff",
@@ -123,10 +123,10 @@ function Chart() {
                 <YAxis stroke="#fff" style={chartStyle} />
                 <Tooltip
                   contentStyle={{
-                    backgroundColor: "#1a202c",
+                    backgroundColor: "#fff",
                     border: "1px solid #2d3748",
                     borderRadius: "0.5rem",
-                    color: "#fff",
+                    color: "#2d3748",
                   }}
                 />
                 <Bar dataKey="streams">
